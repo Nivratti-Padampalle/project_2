@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU FCFS Waiting Time Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index2.js" defer></script>
+</head>
+<body>
+    <div class="toolname"></div>
+    <h1>A simple tool that calculates CPU average waiting time for all processes using FCFS algorithm</h1><br><br>
+
+    <form>
+      <table border="2px solid black">
+        <tr>
+          <th style="width: 120px;font-size: 24px;">Processes:</th>
+          <td>
+            <input type="number" id="numProcesses" min="1" max="100" required placeholder="Enter number of processes" style="text-align: center; font-size: 20px; width: 250px;">
+            <button type="button" onclick="generateFields()" style="margin-left: 25px;height:35px;width: 100px;text-align: center;font-size: 24px;background-color: violet;">Next</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="inputFieldsContainer"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" id="bt" onclick="calculateFCFS()">Calculate</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="result" id="result"></div>
+          </td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>
